@@ -49,7 +49,7 @@ EOT
                 array(\Mage::getModel('M2ePro/Servicing_Task_License')->getPublicNick())
             );
 
-            \Mage::helper('M2ePro/data_cache')->removeValue('M2ePro/Config_Primary_data');
+            \Mage::helper('M2ePro/data_cache_permanent')->removeValue('M2ePro/Config_Primary_data');
 
             $output->writeln("Set license key '" . $key . "'.");
         }
